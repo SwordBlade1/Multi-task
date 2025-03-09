@@ -49,7 +49,7 @@ tar_dataset = pd.read_csv('${Dataset}/${AlloyDataset}')
 
 length = len(tar_dataset)
 cut_test  = np.r_[0.9 * length : length]
-selected_features = np.r_[23, 24, 25]
+selected_features = np.r_[0, 1, 23, 24, 25]
 
 X_test = tar_dataset.iloc[ cut_test , selected_features].values
 y_test = tar_dataset.iloc[ cut_test , 26].values
